@@ -1,0 +1,17 @@
+import { View, Text, TouchableOpacity } from 'react-native'
+import React from 'react';
+import { useNavigation } from '@react-navigation/native';
+
+
+const Settings = () => {
+  const navigation = useNavigation();
+    return (
+    <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
+    <TouchableOpacity style={{backgroundColor:'blue', padding:10, borderRadius:6}} onPress={() => navigation.navigate('Contact')}>
+      <Text style={{color:'#fff', fontWeight:'bold'}}>Go To Contacts</Text>
+    </TouchableOpacity>
+  </View>
+  )
+}
+
+export default Settings;
